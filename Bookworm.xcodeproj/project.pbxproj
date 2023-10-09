@@ -13,6 +13,7 @@
 		E079A3242AD1D4ED002467DC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E079A3232AD1D4ED002467DC /* Preview Assets.xcassets */; };
 		E079A32C2AD1D514002467DC /* Bookworm.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E079A32A2AD1D514002467DC /* Bookworm.xcdatamodeld */; };
 		E079A32E2AD1D593002467DC /* AddBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = E079A32D2AD1D593002467DC /* AddBook.swift */; };
+		E079A3302AD40466002467DC /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E079A32F2AD40466002467DC /* DataController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		E079A3232AD1D4ED002467DC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E079A32B2AD1D514002467DC /* Bookworm.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bookworm.xcdatamodel; sourceTree = "<group>"; };
 		E079A32D2AD1D593002467DC /* AddBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBook.swift; sourceTree = "<group>"; };
+		E079A32F2AD40466002467DC /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				E079A31C2AD1D4E8002467DC /* BookwormApp.swift */,
+				E079A32F2AD40466002467DC /* DataController.swift */,
 				E079A31E2AD1D4E8002467DC /* ContentView.swift */,
 				E079A32A2AD1D514002467DC /* Bookworm.xcdatamodeld */,
 				E079A32D2AD1D593002467DC /* AddBook.swift */,
@@ -143,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E079A3302AD40466002467DC /* DataController.swift in Sources */,
 				E079A32E2AD1D593002467DC /* AddBook.swift in Sources */,
 				E079A31F2AD1D4E8002467DC /* ContentView.swift in Sources */,
 				E079A32C2AD1D514002467DC /* Bookworm.xcdatamodeld in Sources */,
