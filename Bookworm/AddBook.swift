@@ -10,6 +10,7 @@ import SwiftUI
 struct AddBook: View {
     
     @Environment(\.managedObjectContext) var moc
+    @Environment(\.dismiss) var dismiss
     
     @State private var title = ""
     @State private var author = ""
@@ -33,11 +34,8 @@ struct AddBook: View {
                 }
                 Section{
                     TextEditor(text: $review)
-                    Picker ("Rating", selection: $rating) {
-                        ForEach(0..<6) {
-                            Text(String($0))
-                        }
-                    }
+                    Rating(rating: $rating)
+                    
                 } header: {
                     Text("Write a review")
                 }
@@ -52,6 +50,7 @@ struct AddBook: View {
                         newBook.review = review
                         
                         try? moc.save()
+                        dismiss()
                     }
                 }
             }
