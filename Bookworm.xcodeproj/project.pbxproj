@@ -15,7 +15,7 @@
 		E079A32E2AD1D593002467DC /* AddBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = E079A32D2AD1D593002467DC /* AddBook.swift */; };
 		E079A3302AD40466002467DC /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E079A32F2AD40466002467DC /* DataController.swift */; };
 		E079A3322AD44AFA002467DC /* Rating.swift in Sources */ = {isa = PBXBuildFile; fileRef = E079A3312AD44AFA002467DC /* Rating.swift */; };
-		E079A3372AD75358002467DC /* Test View.swift in Sources */ = {isa = PBXBuildFile; fileRef = E079A3362AD75358002467DC /* Test View.swift */; };
+		E079A3392AD8991E002467DC /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = E079A3382AD8991E002467DC /* Emoji.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,7 +28,7 @@
 		E079A32D2AD1D593002467DC /* AddBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBook.swift; sourceTree = "<group>"; };
 		E079A32F2AD40466002467DC /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		E079A3312AD44AFA002467DC /* Rating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rating.swift; sourceTree = "<group>"; };
-		E079A3362AD75358002467DC /* Test View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Test View.swift"; sourceTree = "<group>"; };
+		E079A3382AD8991E002467DC /* Emoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emoji.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,8 +67,8 @@
 				E079A32A2AD1D514002467DC /* Bookworm.xcdatamodeld */,
 				E079A32D2AD1D593002467DC /* AddBook.swift */,
 				E079A3312AD44AFA002467DC /* Rating.swift */,
-				E079A3362AD75358002467DC /* Test View.swift */,
 				E079A3202AD1D4ED002467DC /* Assets.xcassets */,
+				E079A3382AD8991E002467DC /* Emoji.swift */,
 				E079A3222AD1D4ED002467DC /* Preview Content */,
 			);
 			path = Bookworm;
@@ -156,9 +156,9 @@
 				E079A3302AD40466002467DC /* DataController.swift in Sources */,
 				E079A32E2AD1D593002467DC /* AddBook.swift in Sources */,
 				E079A31F2AD1D4E8002467DC /* ContentView.swift in Sources */,
+				E079A3392AD8991E002467DC /* Emoji.swift in Sources */,
 				E079A32C2AD1D514002467DC /* Bookworm.xcdatamodeld in Sources */,
 				E079A31D2AD1D4E8002467DC /* BookwormApp.swift in Sources */,
-				E079A3372AD75358002467DC /* Test View.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
