@@ -16,6 +16,7 @@
 		E079A3302AD40466002467DC /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E079A32F2AD40466002467DC /* DataController.swift */; };
 		E079A3322AD44AFA002467DC /* Rating.swift in Sources */ = {isa = PBXBuildFile; fileRef = E079A3312AD44AFA002467DC /* Rating.swift */; };
 		E079A3392AD8991E002467DC /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = E079A3382AD8991E002467DC /* Emoji.swift */; };
+		E079A33B2ADD7C1B002467DC /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E079A33A2ADD7C1B002467DC /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		E079A32F2AD40466002467DC /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		E079A3312AD44AFA002467DC /* Rating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rating.swift; sourceTree = "<group>"; };
 		E079A3382AD8991E002467DC /* Emoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emoji.swift; sourceTree = "<group>"; };
+		E079A33A2ADD7C1B002467DC /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				E079A31C2AD1D4E8002467DC /* BookwormApp.swift */,
 				E079A32F2AD40466002467DC /* DataController.swift */,
 				E079A31E2AD1D4E8002467DC /* ContentView.swift */,
+				E079A33A2ADD7C1B002467DC /* DetailView.swift */,
 				E079A32A2AD1D514002467DC /* Bookworm.xcdatamodeld */,
 				E079A32D2AD1D593002467DC /* AddBook.swift */,
 				E079A3312AD44AFA002467DC /* Rating.swift */,
@@ -153,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E079A3322AD44AFA002467DC /* Rating.swift in Sources */,
+				E079A33B2ADD7C1B002467DC /* DetailView.swift in Sources */,
 				E079A3302AD40466002467DC /* DataController.swift in Sources */,
 				E079A32E2AD1D593002467DC /* AddBook.swift in Sources */,
 				E079A31F2AD1D4E8002467DC /* ContentView.swift in Sources */,
