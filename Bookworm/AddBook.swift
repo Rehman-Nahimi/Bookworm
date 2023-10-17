@@ -18,6 +18,13 @@ struct AddBook: View {
     @State private var genre = ""
     @State private var review = ""
     
+    var hasValidEntries: Bool {
+        if author.isEmpty || title.isEmpty || genre.isEmpty || review.isEmpty {
+            return false
+        }
+        return true
+    }
+    
     let genres = ["Fantasy", "Horror", "Kids", "Mystery", "Poetry", "Romance", "Thriller"]
     var body: some View {
         NavigationView {
@@ -52,6 +59,7 @@ struct AddBook: View {
                         try? moc.save()
                         dismiss()
                     }
+                    .disabled(hasValidEntries == false)
                 }
             }
             .navigationTitle("Add Book")
