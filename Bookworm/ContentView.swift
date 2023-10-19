@@ -16,7 +16,12 @@ struct ContentView: View {
     
     @State private var showingAddScreen = false
     
-    
+    var isLowRate: Bool {
+        if books.rating(Int16) == 1 {
+            return false
+        }
+        return true
+    }
     var body: some View {
         NavigationView{
             List{
