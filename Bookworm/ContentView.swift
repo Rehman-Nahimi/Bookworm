@@ -26,7 +26,8 @@ struct ContentView: View {
     let dateFormatter = DateFormatter()
     
     init(){
-        dateFormatter.dateStyle = .short
+        // Set Date Format
+        dateFormatter.dateFormat = "YY/MM/dd"
     }
     
     var body: some View {
@@ -46,7 +47,7 @@ struct ContentView: View {
                                 Text(book.author ?? "Unknown Author")
                                     .foregroundColor(.secondary)
                                 
-                                Text(dateFormatter.string(from: book.date) ?? "?")
+                                Text(dateFormatter.string(from: book?.date) ?? "Unknown Date")
                             }
                         }
                     }

@@ -14,7 +14,7 @@ struct AddBook: View {
     
     @State private var title = ""
     @State private var author = ""
-    @State private var rating = 3
+    @State private Int16 rating = 3
     @State private var genre = ""
     @State private var review = ""
     
@@ -56,7 +56,7 @@ struct AddBook: View {
                         newBook.id = UUID()
                         newBook.title = title
                         newBook.author = author
-                        newBook.rating = Int16(rating)
+                        newBook.rating = rating
                         newBook.genre = genre
                         newBook.review = review
                         newBook.date = date
