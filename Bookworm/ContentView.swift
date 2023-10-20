@@ -22,6 +22,13 @@ struct ContentView: View {
         }
         return true
     }*/
+    
+    let dateFormatter = DateFormatter()
+    
+    init(){
+        dateFormatter.dateStyle = .short
+    }
+    
     var body: some View {
         NavigationView{
             List{
@@ -38,6 +45,8 @@ struct ContentView: View {
                                 
                                 Text(book.author ?? "Unknown Author")
                                     .foregroundColor(.secondary)
+                                
+                                Text(dateFormatter.string(from: book.date) ?? "?")
                             }
                         }
                     }

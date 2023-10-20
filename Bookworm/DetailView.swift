@@ -14,6 +14,7 @@ struct DetailView: View {
     @Environment(\.dismiss) var dismiss
 
     @State private var showingDeleteAlert = false
+        
     
     var body: some View {
         ScrollView{
@@ -42,6 +43,8 @@ struct DetailView: View {
             
             Rating(rating: .constant(Int(book.rating)))
                 .font(.largeTitle)
+            
+
             
         }
         .navigationTitle(book.title ?? "Unknown book")
