@@ -18,8 +18,6 @@ struct AddBook: View {
     @State private var genre = ""
     @State private var review = ""
     
-    let date = Date.now
-    
     
     
     var hasValidEntries: Bool {
@@ -59,7 +57,7 @@ struct AddBook: View {
                         newBook.rating = rating
                         newBook.genre = genre
                         newBook.review = review
-                        newBook.date = date
+                        newBook.date = Date.now
                         
                         try? moc.save()
                         dismiss()

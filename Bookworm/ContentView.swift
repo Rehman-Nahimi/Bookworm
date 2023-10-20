@@ -16,13 +16,20 @@ struct ContentView: View {
     
     @State private var showingAddScreen = false
     
-    /*var isLowRate: Bool {
-        if books.rating(Int16) == 1 {
+    var isLowRate: Bool {
+        if ((let book  = (books.rating as? Int16) )== 1 ){
             return false
         }
         return true
-    }*/
+    }
     
+    func getColor() ->Color {
+        if isLowRate{
+            return (.red)
+        }
+        return .white
+    }
+
     let dateFormatter = DateFormatter()
     
     init(){
@@ -43,6 +50,7 @@ struct ContentView: View {
                             VStack(alignment: .leading){
                                 Text(book.title ?? "Unknown Title")
                                     .font(.headline)
+                                    .foregroundColor(getColor())
                                 
                                 Text(book.author ?? "Unknown Author")
                                     .foregroundColor(.secondary)
