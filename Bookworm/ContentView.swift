@@ -8,26 +8,28 @@
 import SwiftUI
 
 struct ContentView: View {
+    let book: Book
     @Environment(\.managedObjectContext) var moc
     @FetchRequest(sortDescriptors: [
         SortDescriptor(\.title),
         SortDescriptor(\.author)
-    ]) var books: FetchedResults<Book>
+    ])
+    
+    var books: FetchedResults<Book>
     
     @State private var showingAddScreen = false
     
-    /*var isLowRate: Bool {
-        if books.rating(Int16) == 1 {
+    
+    
+    var isLowRate: Bool {
+        if Int(book.rating) == 1 {
             return false
         }
         return true
-    }*/
-    
-    let dateFormatter = DateFormatter()
-    
-    init(){
-        dateFormatter.dateStyle = .short
     }
+    
+    
+    
     
     var body: some View {
         NavigationView{
@@ -46,7 +48,7 @@ struct ContentView: View {
                                 Text(book.author ?? "Unknown Author")
                                     .foregroundColor(.secondary)
                                 
-                                Text(dateFormatter.string(from: book.date) ?? "?")
+                                //Text(dateFormatter.string(from: book.date) ?? "?")
                             }
                         }
                     }
@@ -81,8 +83,4 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
+
