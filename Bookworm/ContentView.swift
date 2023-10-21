@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct ContentView: View {
-    let book: Book
     @Environment(\.managedObjectContext) var moc
     @FetchRequest(sortDescriptors: [
         SortDescriptor(\.title),
@@ -21,12 +20,7 @@ struct ContentView: View {
     
     
     
-    var isLowRate: Bool {
-        if Int(book.rating) == 1 {
-            return false
-        }
-        return true
-    }
+    
     
     
     

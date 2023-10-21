@@ -14,7 +14,17 @@ struct DetailView: View {
     @Environment(\.dismiss) var dismiss
 
     @State private var showingDeleteAlert = false
-        
+    
+    var isLowRate: Bool {
+        if Int(book.rating) == 1 {
+            return true
+        }
+        return false
+    }
+    
+    var backgroundColour: Color {
+        return isLowRate ? Color.red : Color.black
+    }
     
     var body: some View {
         ScrollView{
@@ -36,8 +46,8 @@ struct DetailView: View {
             
             Text(book.author ?? "Unknown Author")
                 .font(.title)
-                .foregroundColor(.secondary)
-            
+                .foregroundColor(backgroundColour)
+                
             Text(book.review ?? "No review")
                 .padding()
             
