@@ -54,7 +54,7 @@ struct DetailView: View {
             Rating(rating: .constant(Int(book.rating)))
                 .font(.largeTitle)
             
-
+            //Text(book.date ?? "No Date")
             
         }
         .navigationTitle(book.title ?? "Unknown book")
