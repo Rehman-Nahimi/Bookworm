@@ -21,10 +21,6 @@ struct ContentView: View {
     
     
     
-    
-    
-    
-    
     var body: some View {
         NavigationView{
             List{
@@ -38,6 +34,7 @@ struct ContentView: View {
                             VStack(alignment: .leading){
                                 Text(book.title ?? "Unknown Title")
                                     .font(.headline)
+                                    .foregroundColor(book.backgroundColour)
                                 
                                 Text(book.author ?? "Unknown Author")
                                     .foregroundColor(.secondary)
@@ -77,4 +74,8 @@ struct ContentView: View {
     }
 }
 
-
+extension Book {
+    var backgroundColour: Color {
+        return rating == 1 ? Color.red : Color.black
+    }
+}
